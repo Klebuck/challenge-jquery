@@ -2,7 +2,7 @@ $(document).ready( function(){
 	$(".js-back").hide();
 
 $(function (printNews){
-	$(".callout-news p").append('NUEVAS RECETAS');
+	$(".callout-news p").append("NUEVAS RECETAS");
 
 });
 
@@ -18,8 +18,16 @@ $(function (printNews){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
-	console.log('Recipes: ', recipesArray);
-}
+  console.log('Recipes:',recipesArray);
+  
+  for(var i=0; i<= recipesArray.length; i++){
+    recipesArray[i];
+    if (recipesArray[i]['highlighted'] === true){
+      renderRecipe(recipesArray[i]);
+    }
+  }
+};
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 

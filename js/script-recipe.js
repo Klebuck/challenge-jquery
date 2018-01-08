@@ -3,7 +3,3 @@ $(document).ready( function(){
 
 });
 
-$(function printNews​(Nuevas Recetas){
-	console.log( )
-
-});
